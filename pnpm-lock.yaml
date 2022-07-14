@@ -1,11 +1,14 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@types/lodash': ^4.14.182
+  '@types/node': ^18.0.4
   '@vitejs/plugin-vue': ^2.3.3
   '@vueuse/core': ^8.7.5
   autoprefixer: ^10.4.7
   axios: ^0.27.2
   gsap: ^3.10.4
+  lodash: ^4.17.21
   postcss: ^8.4.14
   qs: ^6.11.0
   sass: ^1.53.0
@@ -23,6 +26,7 @@ dependencies:
   '@vueuse/core': 8.7.5_vue@3.2.37
   axios: 0.27.2
   gsap: 3.10.4
+  lodash: 4.17.21
   qs: 6.11.0
   sass: 1.53.0
   vue: 3.2.37
@@ -30,6 +34,8 @@ dependencies:
   vuex: 4.0.2_vue@3.2.37
 
 devDependencies:
+  '@types/lodash': 4.14.182
+  '@types/node': 18.0.4
   '@vitejs/plugin-vue': 2.3.3_vite@2.9.13+vue@3.2.37
   autoprefixer: 10.4.7_postcss@8.4.14
   postcss: 8.4.14
@@ -91,6 +97,14 @@ packages:
     dependencies:
       estree-walker: 2.0.2
       picomatch: 2.3.1
+    dev: true
+
+  /@types/lodash/4.14.182:
+    resolution: {integrity: sha512-/THyiqyQAP9AfARo4pF+aCGcyiQ94tX/Is2I7HofNRqoYLgN1PBoOWu2/zTA5zMxzP5EFutMtWtGAFRKUe961Q==}
+    dev: true
+
+  /@types/node/18.0.4:
+    resolution: {integrity: sha512-M0+G6V0Y4YV8cqzHssZpaNCqvYwlCiulmm0PwpNLF55r/+cT8Ol42CHRU1SEaYFH2rTwiiE1aYg/2g2rrtGdPA==}
     dev: true
 
   /@types/web-bluetooth/0.0.14:
@@ -792,6 +806,10 @@ packages:
     resolution: {integrity: sha512-mlERgSPrbxU3BP4qBqAvvwlgW4MTg78iwJdGGnv7kibKjWcJksrG3t6LB5lXI93wXRDvG4NpUgJFmTG4T6rdrg==}
     engines: {node: '>=14'}
     dev: true
+
+  /lodash/4.17.21:
+    resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
+    dev: false
 
   /magic-string/0.25.9:
     resolution: {integrity: sha512-RmF0AsMzgt25qzqqLc1+MbHmhdx0ojF2Fvs4XnOqz2ZOBXzzkEwc/dJQZCYHAn7v1jbVOjAZfK8msRn4BxO4VQ==}

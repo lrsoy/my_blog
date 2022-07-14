@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import alias from './vites/alias'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 
@@ -17,5 +18,8 @@ export default defineConfig({
       directoryAsNamespace: true,
       dts: 'types/components.d.ts',
     })
-  ]
+  ],
+  resolve: {
+    alias
+  }
 })
