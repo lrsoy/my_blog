@@ -1,25 +1,22 @@
-import { defineConfig } from 'vite'
+import { defineConfig, loadEnv } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import { ConfigEnv } from 'vite'
 import alias from './vites/alias'
-import AutoImport from 'unplugin-auto-import/vite'
-import Components from 'unplugin-vue-components/vite'
+import { parseEnv } from './vites/initEnv'
+import setupPlugin from './vites/plugin/index'
 
 // https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [
-    vue(),
-    AutoImport({
-      imports: ['vue', 'vue-router'],
-      //为true时在项目根目录自动创建
-      dts: 'types/auto-imports.d.ts',
-    }),
-    Components({
-      dirs: ['src/components'],
-      directoryAsNamespace: true,
-      dts: 'types/components.d.ts',
-    })
-  ],
-  resolve: {
-    alias
+export default ({ command, mode }: ConfigEnv) => {
+  const isBuild = command == 'build'
+  const root = process.cwd(); // 获取文件路径，配置文件所在的路径 ‘ .env ’
+  const env = parseEnv(loadEnv(mode, root)); // 获取配置项 ‘ .env ’ 文件的内容  
+
+  return {
+    plugins: [
+      ...setupPlugin(isBuild, env)
+    ],
+    resolve: {
+      alias
+    }
   }
-})
+}
