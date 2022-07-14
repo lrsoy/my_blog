@@ -1,3 +1,4 @@
+// 路径别名配置
 import path from 'path'
 import { AliasOptions } from 'vite'
 
