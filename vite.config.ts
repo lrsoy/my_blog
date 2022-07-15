@@ -5,6 +5,7 @@ import alias from './vites/alias'
 import css from './vites/css'
 import { parseEnv } from './vites/initEnv'
 import setupPlugin from './vites/plugin/index'
+import { setupBuild } from './vites/build'
 
 // https://vitejs.dev/config/
 export default ({ command, mode }: ConfigEnv) => {
@@ -19,6 +20,7 @@ export default ({ command, mode }: ConfigEnv) => {
     resolve: {
       alias
     },
-    css
+    css,
+    build: setupBuild(mode)
   }
 }
