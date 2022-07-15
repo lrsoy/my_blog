@@ -2,6 +2,7 @@ import { defineConfig, loadEnv } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { ConfigEnv } from 'vite'
 import alias from './vites/alias'
+import css from './vites/css'
 import { parseEnv } from './vites/initEnv'
 import setupPlugin from './vites/plugin/index'
 
@@ -17,6 +18,7 @@ export default ({ command, mode }: ConfigEnv) => {
     ],
     resolve: {
       alias
-    }
+    },
+    css
   }
 }
