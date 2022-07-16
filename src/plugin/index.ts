@@ -1,3 +1,6 @@
 // 插件入口文件
-
-export { }
+import { App } from 'vue'
+import { setupTailwindCss } from './tailwindcss'
+export function setupPlugins(app: App) {
+  setupTailwindCss()
+}
