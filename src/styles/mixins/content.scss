@@ -1,1 +1,23 @@
 // 管理浏览器公共的样式( 比如滚动条等等 )
+// 一些浏览器中默认的样式，例如滚动条样式等等
+@mixin scrollbar-style($w:0, $h:0, $bg: transparent, $slider: transparent) {
+  &::-webkit-scrollbar {
+    width: $w;
+    height: $h;
+  }
+
+  // 背景
+  &::-webkit-scrollbar-track {
+    background-color: $bg;
+  }
+
+  // 滑块
+  &::-webkit-scrollbar-thumb {
+    @apply rounded-sm;
+    background-color: $slider;
+  }
+}
+
+input:focus {
+  outline: none;
+}
