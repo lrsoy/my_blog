@@ -1,4 +1,4 @@
 // 工具库入口文件
-
-export { }
+export * from './dom'
+export * from './storage'
 
