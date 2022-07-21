@@ -6,11 +6,10 @@ import HomeNav from './components/home-nav.vue'
 </script>
 <template>
   <div class="home-continer">
-    <nav>
-      <HomeNav />
-      <HomeBanner />
-    </nav>
-    <main>主体内容</main>
+    <HomeBanner />
+    <main>
+      <div v-for="item in 100">主体内容{{ item }}</div>
+    </main>
   </div>
 </template>
 
