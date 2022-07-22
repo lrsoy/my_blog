@@ -2,7 +2,6 @@
 
 <script setup lang="ts">
 import HomeBanner from './components/home-banner.vue'
-import HomeNav from './components/home-nav.vue'
 </script>
 <template>
 <!-- <img src="https://ghchart.rshah.org/lrsoy" /> -->
@@ -19,7 +18,7 @@ import HomeNav from './components/home-nav.vue'
   @apply w-screen h-screen relative overflow-hidden overflow-x-hidden overflow-y-hidden;
   &:hover {
     overflow-y: overlay;
-    @include scrollbar-style($w: 5px, $slider: pink);
+    @include scrollbar-style($w: 5px, $slider: #787878);
   }
 }
 </style>

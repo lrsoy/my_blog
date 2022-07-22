@@ -3,6 +3,8 @@ import App from './App.vue'
 import router, { setupRouter } from './router'
 import { setupPlugins } from './plugin'
 
+import "~/styles/fonts/index.scss"
+
 async function bootstrap() {
   const app = createApp(App)
   setupPlugins(app)
