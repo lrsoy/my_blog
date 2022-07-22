@@ -2,13 +2,14 @@
 
 <script setup lang="ts">
 import HomeBanner from './components/home-banner.vue'
+import HomeMainList from './components/home-main-list.vue'
 </script>
 <template>
 <!-- <img src="https://ghchart.rshah.org/lrsoy" /> -->
   <div class="home-continer">
     <HomeBanner />
     <main>
-      <div v-for="item in 100">主体内容{{ item }}</div>
+      <HomeMainList />
     </main>
   </div>
 </template>

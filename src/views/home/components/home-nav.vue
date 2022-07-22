@@ -16,5 +16,8 @@
     @apply text-2xl cursor-pointer text-white;
     font-family: 'Pompiere-Regular';
   }
+  // .open-ben {
+  //   @apply w-[100px] h-[36px] bg-[url('~/assets/images/icon-user.svg')] bg-auto bg-center bg-no-repeat;
+  // }
 }
 </style>
