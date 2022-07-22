@@ -5,6 +5,7 @@ import HomeBanner from './components/home-banner.vue'
 import HomeNav from './components/home-nav.vue'
 </script>
 <template>
+<!-- <img src="https://ghchart.rshah.org/lrsoy" /> -->
   <div class="home-continer">
     <HomeBanner />
     <main>
