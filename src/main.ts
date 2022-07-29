@@ -11,5 +11,6 @@ async function bootstrap() {
   setupRouter(app)
   await router.isReady()
   app.mount('#app')
+
 }
 bootstrap()
